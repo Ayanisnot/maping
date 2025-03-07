@@ -1,7 +1,7 @@
-var numbers = [28, 6, 19, 95];
-function myfunction(num) {
- return num * 10;
-
+product = (a,b) =>  a*b;
+try {
+ document.getElementById("result").innerHTML = a;
 }
- var newarray = numbers.map(myfunction);
- document.getElementById("product value").innerHTML = newarray;
+catch(err) {
+ document.getElementById("result").innerHTML = err.message;
+}
