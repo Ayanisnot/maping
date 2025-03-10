@@ -4,11 +4,12 @@
     
 </head>
 <body>
-    <h2>ascending and descending</h2>
-    <p id="product_value"> </p>
-    <button onclick="ascending()"> Ascending </button>
-    <button onclick="descending()">  Descending </button>
-
+    <form name="myform" onsubmit="validateform();">
+        Name: <input type="text" name="fname" >
+    Age : <input id="id1" type="number" max="18">
+        <input type="submit" value="login">
+        <p id="message"></p>
+        </form>
 </body>
 <script src="script.js"></script>
 </html>
