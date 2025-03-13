@@ -1,11 +1,26 @@
-function validateform() {
- var x = document.forms["myform"]["fname"].value;
- var y = document.forms["myform"]['id1'].value;
-if (x ==  ""  || y == "") {
-    alert("name/age cannot be empty");
-return false;
+class student {
+ constructor(name) {
+   this.studentName = name;
+ }
+  static hello() {
+    return "hello";
+  }
+  Present() {
+    return 'My Name is ' + this.studentName;
 }
- else
-  alert("Succesfully logged in");
+}
+ class grade extends student {
+        constructor(name,grade)   {
+        super(name);
+        this.studentgrade = grade;
+    }
+    show() {
+        return this.Present() + ' . I read in ' + this.studentgrade;
+    }
+ }
+ let mystudent = new grade ("Ayan" , "Class 8");
+ document.getElementById("details").innerHTML = mystudent.show();
+ 
+   
 
-}
+ 
